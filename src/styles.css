@@ -1,0 +1,120 @@
+/* Variables para colores y sombras */
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #ffffff;
+    --background-color: #f4f4f9;
+    --border-color: #ddd;
+    --hover-color: #45a049;
+    --focus-color: #3e8e41;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilo para el body */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Contenedor principal */
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilo para el formulario */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Estilo para labels */
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #666;
+}
+
+
+/* Contenedor de input y botón */
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Estilo para cuadros de texto */
+
+input[type="text"],
+textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: 0 1px 3px var(--shadow-color) inset;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+    outline: none;
+}
+
+
+/* Estilo para botones */
+
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--focus-color);
+}
+
+.text-center {
+    text-align: center;
+}
